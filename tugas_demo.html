@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Tugas 2, 3, dan 4</title>
+    <link rel="stylesheet" href="demo_eksternal.css">
+    <style>
+        /* Internal */
+        .t3 { color: green; }
+        h1 { color: darkred; }
+        #paragraf-1 { color: blue; }
+        .textparagraf { color: orange; }
+        .kotak { border: 1px dashed #999; padding: 8px; margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <h2>Tugas 2: h1 vs #intro h1</h2>
+    <h1>Ini h1 di luar #intro</h1>
+    <div id="intro"><h1>Ini h1 di dalam #intro</h1></div>
+
+    <h2>Tugas 3: Internal vs Eksternal vs Inline</h2>
+    <div class="kotak"><p class="t3">Internal + eksternal (bobot sama): yang ditulis terakhir menang, yaitu internal (hijau)</p></div>
+    <div class="kotak"><p class="t3" style="color: purple;">Dengan inline: inline menang (ungu)</p></div>
+
+    <h2>Tugas 4: ID vs Class</h2>
+    <div class="kotak"><p id="paragraf-1" class="textparagraf">ID dan Class sama-sama punya color: ID menang (biru)</p></div>
+</body>
+</html>
